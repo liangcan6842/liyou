@@ -1,0 +1,61 @@
+INFO    2022-10-27 00:29:03,630C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:run.py:23 
+                             _    _         _      _____         _
+              __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+             / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+            | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+             \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+                  |_|
+                  开始执行立友项目项目...
+                
+INFO    2022-10-27 00:45:51,687C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:run.py:23 
+                             _    _         _      _____         _
+              __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+             / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+            | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+             \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+                  |_|
+                  开始执行立友项目项目...
+                
+ERROR   2022-10-27 00:45:57,154C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:115 用例总数: 8
+ERROR   2022-10-27 00:45:57,154C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:116 异常用例数: 0
+INFO    2022-10-27 00:45:57,154C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:119 用例执行时长: 3.23 s
+INFO    2022-10-27 00:45:57,154C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:123 用例成功率: 0.00 %
+INFO    2022-10-27 01:00:01,989C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:run.py:23 
+                             _    _         _      _____         _
+              __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+             / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+            | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+             \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+                  |_|
+                  开始执行立友项目项目...
+                
+ERROR   2022-10-27 01:00:04,629C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:115 用例总数: 8
+ERROR   2022-10-27 01:00:04,629C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:116 异常用例数: 0
+INFO    2022-10-27 01:00:04,629C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:119 用例执行时长: 2.08 s
+INFO    2022-10-27 01:00:04,629C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:123 用例成功率: 0.00 %
+INFO    2022-10-27 01:07:45,479C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:run.py:23 
+                             _    _         _      _____         _
+              __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+             / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+            | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+             \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+                  |_|
+                  开始执行立友项目项目...
+                
+ERROR   2022-10-27 01:07:48,116C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:115 用例总数: 8
+ERROR   2022-10-27 01:07:48,116C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:116 异常用例数: 0
+INFO    2022-10-27 01:07:48,117C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:119 用例执行时长: 2.07 s
+INFO    2022-10-27 01:07:48,117C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:123 用例成功率: 0.00 %
+INFO    2022-10-27 01:09:37,895C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:run.py:23 
+                             _    _         _      _____         _
+              __ _ _ __ (_)  / \  _   _| |_ __|_   _|__  ___| |_
+             / _` | '_ \| | / _ \| | | | __/ _ \| |/ _ \/ __| __|
+            | (_| | |_) | |/ ___ \ |_| | || (_) | |  __/\__ \ |_
+             \__,_| .__/|_/_/   \_\__,_|\__\___/|_|\___||___/\__|
+                  |_|
+                  开始执行立友项目项目...
+                
+ERROR   2022-10-27 01:09:40,593C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:115 用例总数: 8
+ERROR   2022-10-27 01:09:40,593C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:116 异常用例数: 0
+INFO    2022-10-27 01:09:40,594C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:119 用例执行时长: 2.11 s
+INFO    2022-10-27 01:09:40,594C:\Users\Administrator\Desktop\liyou\logs\info-2022-10-27.log:conftest.py:123 用例成功率: 0.00 %

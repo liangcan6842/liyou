@@ -22,31 +22,31 @@ def clear_report():
     del_file(ensure_path_sep("\\report"))
 
 
-@pytest.fixture(scope="session", autouse=True)
-def work_login_init():
-    """
-    获取登录的cookie
-    :return:
-    """
-
-    url = "http://liyou.api.sauou.com"
-    data = {
-        "username": 'admin',
-        "password": '123456'
-    }
-    headers = {'Content-Type': 'application/json'}
-    # 请求登录接口
-
-    res = requests.post(url=url, data=data, verify=True, headers=headers)
-    response_cookie = res.cookies
-
-    cookies = ''
-    for k, v in response_cookie.items():
-        _cookie = k + "=" + v + ";"
-        # 拿到登录的cookie内容，cookie拿到的是字典类型，转换成对应的格式
-        cookies += _cookie
-        # 将登录接口中的cookie写入缓存中，其中login_cookie是缓存名称
-    CacheHandler.update_cache(cache_name='login_cookie', value=cookies)
+# @pytest.fixture(scope="session", autouse=True)
+# def work_login_init():
+#     """
+#     获取登录的cookie
+#     :return:
+#     """
+#
+#     url = "http://liyou.api.sauou.com"
+#     data = {
+#         "username": 'admin',
+#         "password": '123456'
+#     }
+#     headers = {'Content-Type': 'application/json'}
+#     # 请求登录接口
+#
+#     res = requests.post(url=url, data=data, verify=True, headers=headers)
+#     response_cookie = res.cookies
+#
+#     cookies = ''
+#     for k, v in response_cookie.items():
+#         _cookie = k + "=" + v + ";"
+#         # 拿到登录的cookie内容，cookie拿到的是字典类型，转换成对应的格式
+#         cookies += _cookie
+#         # 将登录接口中的cookie写入缓存中，其中login_cookie是缓存名称
+#     CacheHandler.update_cache(cache_name='login_cookie', value=cookies)
 
 
 def pytest_collection_modifyitems(items):

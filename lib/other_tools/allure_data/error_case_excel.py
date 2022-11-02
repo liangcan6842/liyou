@@ -314,3 +314,17 @@ class ErrorCaseExcel:
 
 if __name__ == '__main__':
     ErrorCaseExcel().write_case()
+
+import os
+"""不关闭wps上的excel继续写入数据"""
+
+
+def closeFile():
+
+    try:
+        os.system('TASKKILL /F /IM et.exe')
+
+    except Exception:
+        print("KU")
+
+closeFile()

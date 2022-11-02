@@ -11,6 +11,7 @@ def root_path():
     path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     return path
 
+
 def ensure_path_sep(path: Text) -> Text:
     """兼容 windows 和 linux 不同环境的操作系统路径 """
     if "/" in path:

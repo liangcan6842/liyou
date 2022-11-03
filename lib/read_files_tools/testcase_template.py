@@ -21,10 +21,9 @@ def write_case(case_path, page):
         file.write(page)
 
 
-def write_test_case_file(*, allure_epic, allure_feature, class_title,
+def write_testcase_file(*, allure_epic, allure_feature, class_title,
                         func_title, case_path, case_ids, file_name, allure_story):
     """
-
         :param allure_story:
         :param file_name: 文件名称
         :param allure_epic: 项目名称
@@ -42,26 +41,19 @@ def write_test_case_file(*, allure_epic, allure_feature, class_title,
     page = f'''#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time   : {now}
-
-
 import allure
 import pytest
-from lib.read_files_tools.get_yaml_data_analysis import Gettest_case
-from lib.assertion.assert_control import Assert
-from lib.requests_tool.request_control import RequestControl
-from lib.read_files_tools.regular_control import regular
-from lib.requests_tool.teardown_control import TearDownHandler
-
-
+from utils.read_files_tools.get_yaml_data_analysis import GetTestCase
+from utils.assertion.assert_control import Assert
+from utils.requests_tool.request_control import RequestControl
+from utils.read_files_tools.regular_control import regular
+from utils.requests_tool.teardown_control import TearDownHandler
 case_id = {case_ids}
-TestData = Gettest_case.case_data(case_id)
+TestData = GetTestCase.case_data(case_id)
 re_data = regular(str(TestData))
-
-
 @allure.epic("{allure_epic}")
 @allure.feature("{allure_feature}")
 class Test{class_title}:
-
     @allure.story("{allure_story}")
     @pytest.mark.parametrize('in_data', eval(re_data), ids=[i['detail'] for i in TestData])
     def test_{func_title}(self, in_data, case_skip):
@@ -73,8 +65,6 @@ class Test{class_title}:
         TearDownHandler(res).teardown_handle()
         Assert(in_data['assert_data']).assert_equality(response_data=res.response_data,
                                                        sql_data=res.sql_data, status_code=res.status_code)
-
-
 if __name__ == '__main__':
     pytest.main(['{file_name}', '-s', '-W', 'ignore:Module already imported:pytest.PytestWarning'])
 '''

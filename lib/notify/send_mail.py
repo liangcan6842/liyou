@@ -79,5 +79,6 @@ class SendEmail:
         """
         self.send_mail(user_list, sub, content)
 
+
 if __name__ == '__main__':
     SendEmail(AllureFileClean().get_case_count()).send_main()

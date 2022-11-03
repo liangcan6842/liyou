@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 # @Time    : 2022/10/26 20:12
-# @Author  : 余少琪
+# @Author  : 梁灿
 # @Email   : 1473166229@qq.com
 # @File    : encryption_algorithm_control
 # @describe:

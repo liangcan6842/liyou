@@ -12,6 +12,7 @@ from lib.other_tools.exceptions import ValueNotFoundError
 from lib.cache_process.cache_control import CacheHandler
 from lib import config
 import os
+import datetime
 
 
 class CaseData:
@@ -291,17 +292,17 @@ class CaseData:
         """
         try:
             _dates = case_data['data']
-            # # 处理请求参数中日期,没有加引号,导致数据不正确问题
-            # if _dates is not None:
-            #     def data_type(value):
-            #         if isinstance(value, dict):
-            #             for k, v in value.items():
-            #                 if isinstance(v, dict):
-            #                     data_type(v)
-            #                 else:
-            #                     if isinstance(v, datetime.date):
-            #                         value[k] = str(v)
-            #     data_type(_dates)
+            # 处理请求参数中日期,没有加引号,导致数据不正确问题
+            if _dates is not None:
+                def data_type(value):
+                    if isinstance(value, dict):
+                        for k, v in value.items():
+                            if isinstance(v, dict):
+                                data_type(v)
+                            else:
+                                if isinstance(v, datetime.date):
+                                    value[k] = str(v)
+                data_type(_dates)
             return _dates
 
         except KeyError as exc:

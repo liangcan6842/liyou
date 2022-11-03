@@ -14,7 +14,7 @@ def get_all_files(file_path,yaml_data_switch=False) -> list:
     :return:
     """
     filename = []
-    #获取所有文件 下的文件名称
+    # 获取所有文件 下的文件名称
     for root,dirs,files in os.walk(file_path):
         for _file_path in files:
             path = os.path.join(root,_file_path)
